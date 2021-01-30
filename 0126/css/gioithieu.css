@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+body a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+header{
+    color: blue;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding: 20px;
+}
+section{
+    padding: 20px 0;
+}
+.anhdaidien img{
+    width: 500px;
+    border-radius: 50%;
+}
+section h1{
+    color: blue;
+    padding: 15px 0;
+    font-size: 36px;
+}
+section h2{
+    color: blue;
+    padding: 15px 0;
+}
+section h4{
+    font-weight: normal;
+    font-size: 24px;
+    padding: 9px 0;
+}
+.thongtincongviec{
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 30%;
+    padding-right: 20%;
+}
+.thongtincongviec_content{
+    text-align: left;
+}
+footer{
+    padding: 40px 0 60px 0;
+}
+footer a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+
+    display: block;
+    margin: auto;
+    padding: 20px 40px;
+    width: 20%;
+    background-color: blue;
+}
+
+footer a:hover{
+    background-color: darkblue;
+}

@@ -144,3 +144,17 @@ body{
 #help:target{
     visibility: visible;
 }
+
+/* Status page */
+#backtohome{
+    width: 100%;
+    text-align: right;
+}
+#backtohome a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+#backtohome a:hover{
+    color: red;
+}

@@ -119,6 +119,9 @@ body{
 #help p{
     padding-top: 8px;
 }
+.help-bullets{
+    margin-right: 24px;
+}
 .close{
     margin-top: 24px;
     padding: 0 5%;

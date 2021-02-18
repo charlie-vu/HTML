@@ -1,0 +1,240 @@
+/* 
+login_btn_color: #848FA5
+saveyourspot_btn: #14AECF
+downsymbol: &darr;
+coverpic: #0A194E
+drop_highlight: #09A3CF
+featured: #F7F7F7
+featured text: #7E7E7E
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+
+header{
+    text-transform: uppercase;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 -2em 1em 1.5em;
+}
+    .header_social{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center ; */
+
+        background-color: black;
+        /* color: white; */
+        font-weight: bold;
+
+        padding: 1em 5%;
+    }
+        .header_social a{
+            color: white;
+        }
+        .social_container{
+            display: flex;
+        }
+        .phone{
+            padding-right: 1em;
+            border-right: 1px solid white;
+            display: flex;
+            align-items: center;
+        }
+        .social_channel{
+            display: flex;
+            align-items: center;
+            padding: 0 1em;
+        }
+        .icon{
+            background-color: white;
+            width: 1.5em;
+            height: 1.5em;
+
+            margin: 0 0.5em;
+        }
+    .login_btn a{
+        transition: color .5s;
+    }
+    .login_btn a:hover{
+        color: #09A3CF;
+    }
+    
+    menu{
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6em;
+        background-color: white;
+    }
+        menu h1{
+            font-size: 2em;
+        }
+        menu ul{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .dropdown{
+            padding: 0 2em;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            position: relative;
+        }
+        .dropdown:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .drop_list{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: inherit;
+            width: max-content;
+            transition: .5s;
+        }
+        .dropdown:hover .drop_list{
+            display: block;
+        }
+        .drop_list a{
+            background-color: black;
+            color: white;
+            padding: 1em 1.5em;
+            display: block;
+            transition: .5s;
+        }
+        .drop_list a:hover{
+            color: #09A3CF;
+        }
+
+        .search_icon{
+            width: 2em;
+            height: 2em;
+            background-color: black;
+            cursor: pointer;
+        }
+
+.cover_img{
+    width: 100%;
+    height: 700px;
+    background-color: #051343;
+    color: white;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+.cover_img a{
+    color: white;
+}
+    .cover_img h2{
+        font-size: 7em;
+    }
+    .cover_img p{
+        font-size: 1.5em;
+    }
+    .saveyourspot_btn{
+        background-color: #14AECF;
+        padding: 1em 2em;
+        margin-top: 2em;
+    }
+        .saveyourspot_btn p{
+            font-size: 1em;
+        }
+        .saveyourspot_btn:hover{
+            background-color: #09A3CF;
+        }
+
+
+.featured_in{
+    background-color: #F7F7F7;
+    padding-bottom: 3em;
+}
+    .heading_featured{
+        display: flex;
+        justify-content: center;
+        padding: 1em 0;
+        font-weight: bold;
+        color: #7E7E7E;
+        text-transform: uppercase;
+    }
+    .com_container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+    .com{
+        background-color: black;
+        width: 128px;
+        height: 48px;
+    }
+
+.mission{
+    padding: 3em 0;
+    text-align: center;
+    line-height: 2;
+
+    width: 50%;
+    margin: auto;
+}
+.category_container{
+    text-align: center;
+}
+    .category_header h2{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    .category_intro{
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+    .thumbnail_container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 3em 15%;
+    }
+        .thumbnail{
+            width: 350px;
+            height: 250px;
+            background-color: black;
+            margin: 1em 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .thumbnail p{
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.5em;
+        }

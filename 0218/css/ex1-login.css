@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.form-container{
+    padding: 2em;
+    background-color: #FFFFCC;
+    width: max-content;
+    margin: auto;
+    margin-top: 10%;
+}
+.form-header h2{
+    text-transform: uppercase;
+    color:  #0000CC;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.form-body{
+    display: flex;
+    /* align-items: center; */
+    overflow: auto;
+
+    margin-top: 1em;
+}
+    .form-body img{
+        width: 5em;
+    }
+    .form-input-container{
+        margin-left: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+        .form-input label{
+            width: 5em;
+            display: inline-block;
+
+            font-weight: bold;
+            color: #000066;
+        }
+        .form-input input{
+            margin-left: 1em;
+            padding: 0.3em;
+        }
+.form-btn-container{
+    margin-top: 1em;
+    text-align: right;
+}
+    .form-btn-container button{
+        padding: 0.5em 1em;
+        margin-left: 0.5em;
+    }
+
+
+#msg-success{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#msg-success:target{
+    visibility: visible;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+}
+.alert-container{
+    width: max-content;
+    margin: auto;
+    margin-top: 15%;
+    border: 1px solid black;
+}
+    .alert-text{
+        background-color: white;
+        padding: 5em 10em;
+        font-weight: bold;
+    }
+    .alert-btn{
+        background-color: lightgray;
+        border-top: 1px solid gray;
+        text-align: right;
+        padding: 1.5em 0;
+        padding-right: 3em;
+    }
+        .alert-btn button{
+            padding: 0.5em 3em;
+        }

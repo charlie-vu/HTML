@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ex2-library.css">
+    <title>Exercise 2 - Phiếu mượn sách</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#thanh-cong">
+            <div class="form-header">
+                <img src="img/ex2-lib/regis.png" alt="">
+                <h2>Phiếu mượn sách</h2>
+            </div>
+            <div class="form-input-container">
+                <div class="form-input ma-sinh-vien">
+                    <label for="ma-sinh-vien">Mã sinh viên</label>
+                    <input type="text" name="ma-sinh-vien" required>
+                </div>
+                <div class="form-input ho-va-ten">
+                    <label for="ho-va-ten">Họ và tên</label>
+                    <input type="text" name="ho-va-ten" required>
+                </div>
+                <div class="form-input loai-sach">
+                    <label for="loai-sach">Loại sách</label>
+                    <select name="loai-sach" id="loai-sach">
+                        <option value="sach-default">--Chọn loại sách--</option>
+                        <option value="sach-1">Sách loại 1</option>
+                        <option value="sach-2">Sách loại 2</option>
+                        <option value="sach-3">Sách loại 3</option>
+                        <option value="sach-4">Sách loại 4</option>
+                        <option value="sach-5">Sách loại 5</option>
+                    </select>
+                </div>
+                <div class="form-input ten-sach">
+                    <label for="ten-sach">Tên sách</label>
+                    <input type="text" name="ten-sach" size="80" required>
+                </div>
+                <div class="form-input ngay-muon">
+                    <label for="ngay-muon">Ngày mượn</label>
+                    <input type="date" name="ngay-muon" required>
+                </div>
+                <div class="form-input ngay-tra">
+                    <label for="ngay-tra">Ngày trả</label>
+                    <input type="date" name="ngay-tra" required>
+                </div>
+            </div>
+            <div class="form-btn-container">
+                <button class="form-btn" type="submit">
+                    <img src="img/ex2-lib/log_in.png" alt="">
+                    <p>Đăng ký</p>
+                </button>
+                <button class="form-btn" type="reset">
+                    <img src="img/ex2-lib/cancel.png" alt="">
+                    <p>Nhập lại</p>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="alert-success" id="thanh-cong">
+        <div class="overlay"></div>
+        <div class="alert-container">
+            <div class="alert-text">
+                <p>Đăng ký thành công!</p>
+            </div>
+            <div class="alert-btn">
+                <form action="#">
+                <button type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

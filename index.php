@@ -10,7 +10,7 @@
 <body>
 
     <?php
-    readfile('_index/index.html');
+    readfile('00_index/index.html');
     ?>
 
 </body>

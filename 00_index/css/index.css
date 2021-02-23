@@ -29,8 +29,10 @@ li{
     background-color: #2C7ABE;
     color: white;
 }
+    .header h1{
+        margin: 1em 0;
+    }
     .header p{
-        margin-top: 1em;
         font-size: 1.5em;
     }
 .section{
@@ -124,6 +126,6 @@ li{
         align-items: center;
     }
     .item-container{
-        min-width: max-content;
+        width: 100%;
     }
 }

@@ -83,6 +83,7 @@ li{
             .date{
                 font-weight: bold;
                 text-decoration: underline;
+                text-align: right;
             }
             .item h3{
                 font-size: 1.2em;

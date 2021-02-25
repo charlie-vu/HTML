@@ -52,8 +52,14 @@ body{
 .alert-box{
     display: none;
     font-size: inherit;
-    background-color: coral;
+    /* background-color: coral; */
     color: white;
     padding: 1em;
     text-transform: uppercase;
 }
+    #alert-text{
+        background-color: coral;
+    }
+    #alert-text-ok{
+        background-color: #337AB7;
+    }

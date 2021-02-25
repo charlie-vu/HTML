@@ -8,14 +8,24 @@ function nhap_a(){
 
         document.getElementById("button-a").classList.replace("alert-none", "alert-NaN");
         document.getElementById("button-a").classList.replace("alert-ok", "alert-NaN");
-        // document.getElementById("alert-text").style.display = "block";
+        document.getElementById("alert-text").style.display = "block";
     }
     else{
         document.getElementById("button-a").classList.replace("alert-none", "alert-ok");
         document.getElementById("button-a").classList.replace("alert-NaN", "alert-ok");
+        document.getElementById("alert-text").style.display = "none";
+    }
+
+    if (!isNaN(a) && !isNaN(b)){
+        document.getElementById("alert-text-ok").style.display = "block";
         // document.getElementById("alert-text").style.display = "none";
     }
+    else {
+        document.getElementById("alert-text-ok").style.display = "none";
+        // document.getElementById("alert-text").style.display = "block";
+    }
 }
+
 function nhap_b(){
     b = prompt("Nhập giá trị b:");
     console.log("b = " + b)
@@ -32,13 +42,10 @@ function nhap_b(){
         document.getElementById("button-b").classList.replace("alert-NaN", "alert-ok");
         // document.getElementById("alert-text").style.display = "none";
     }
+    if (!isNaN(a) && !isNaN(b)){
+        document.getElementById("alert-text-ok").style.display = "block";
+    } else document.getElementById("alert-text-ok").style.display = "none";
 }
-
-
-// if (!isNaN(a) && !isNaN(b)){
-//     document.getElementById("alert-text-ok").style.display = "block";
-// } else document.getElementById("alert-text-ok").style.display = "none";
-
 
 function in_ket_qua(){
     if (a == 0){
@@ -60,4 +67,5 @@ function in_ket_qua(){
 function reset(){
     location.reload()
 }
+
 

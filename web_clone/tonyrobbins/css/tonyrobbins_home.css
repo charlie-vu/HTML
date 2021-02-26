@@ -239,7 +239,7 @@ menu{
 }
     .com_container{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
 
         max-width: 70vw;
@@ -257,7 +257,7 @@ menu{
 
 .mission{
     padding: 10vh 5vw;
-    width: 50vw;
+    width: 70vw;
     margin: auto;
 
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/bai2_function.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2vw;
+        }
+        .container{
+            width: max-content;
+            margin: auto;
+            margin-top: 3em;
+            padding: 2em;
+            border: 1px solid black;
+            line-height: 2;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+
+
+        <!-- <script src="js/bai2_function.js"></script> -->
+        <script>
+            var a, b, s, h, m, d;
+
+            function nhap_a(){
+                a = prompt("Nhập số a:")
+                document.writeln("Số a nhập vào là: " + a)
+                document.writeln("<br/>")
+            }
+            function nhap_b(){
+                b = prompt("Nhập số b:")
+                document.writeln("Số b nhập vào là: " + b)
+                document.writeln("<br/>")
+            }
+            
+            function cong(){
+                s = parseInt(a) + parseInt(b);
+            }
+            function tru(){
+                h = parseInt(a) - parseInt(b);
+            }
+            function nhan(){
+                m = parseInt(a)*parseInt(b);
+            }
+            function chia(){
+                d = parseInt(a)/parseInt(b);
+            }
+            function inketqua(){
+                document.writeln("---------------------")
+                document.writeln("<br/>")
+                if (isNaN(s) || isNaN(h) || isNaN(m) || isNaN(d)){
+                    document.writeln("Hãy nhập vào số!")
+                }
+                else{                    
+                document.writeln(a + " + " + b + " = " + s)
+                document.writeln("<br/>")
+                document.writeln(a + " - " + b + " = " + h)
+                document.writeln("<br/>")
+                document.writeln(a + " x " + b + " = " + m)
+                document.writeln("<br/>")
+                document.writeln(a + " : " + b + " = " + d)
+                document.writeln("<br/>")
+                }
+            }
+            nhap_a()
+            nhap_b()
+            cong()
+            tru()
+            nhan()
+            chia()
+            inketqua()
+        </script>
+    </div>
+</body>
+</html>

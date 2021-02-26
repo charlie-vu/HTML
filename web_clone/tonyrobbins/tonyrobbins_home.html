@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/tonyrobbins_home_backup.css"> -->
     <link rel="stylesheet" href="css/tonyrobbins_home.css">
+    <link rel="stylesheet" href="css/tonyrobbins_home_res.css">
     <title>Tony Robbins_clone_practice</title>
 </head>
 <body>
@@ -28,15 +29,18 @@
         </div>
 
         <menu>
+            <div class="show_menu_container menu_element">
+                <a href="#menu_main"><div class="show_menu_btn"></div></a>
+            </div>
             <a href="#" class="menu_header menu_element"><h1>Tony Robbins</h1></a>
-            <ul class="menu_main menu_element">
+            <ul class="menu_main menu_element" id="menu_main">
                 <li class="menu_item dropdown">
                     <p>Help me with &darr;</p>
                     <div class="drop_list">
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                         <a href="#">Lorem ipsum.</a>
                         <a href="#">Lorem ipsum dolor.</a>
-                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
                     </div>
                 </li>
                 <li class="menu_item dropdown">
@@ -53,7 +57,7 @@
                     <div class="drop_list">
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
-                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, in</a>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                     </div>
                 </li>
@@ -68,7 +72,7 @@
                 </li>
                 <li class="menu_item dropdown">
                     <p>Coaching &darr;</p>
-                    <div class="drop_list">
+                    <div class="drop_list drop_to_left">
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                         <a href="#">Lorem ipsum dolor.</a>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
@@ -77,22 +81,27 @@
                 </li>
                 <li class="menu_item dropdown">
                     <p>Resources &darr;</p>
-                    <div class="drop_list">
+                    <div class="drop_list drop_to_left">
                         <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                         <a href="#">Lorem ipsum dolor sit.</a>
                         <a href="#">Lorem ipsum dolor sit amet.</a>
                     </div>
                 </li>
+                <div class="search_icon">
+                    <div class="search_fake_icon"></div>
+                </div>
             </ul>
-            <div class="search_icon menu_element">
+            <!-- <div class="search_icon menu_element">
                 <div class="search_fake_icon"></div>
-            </div>
+            </div> -->
         </menu>
     </header>
 
     <section class="cover_img">
-        <div class="fake_cover_img"></div>
+        <div class="fake_cover_img">
+            <img src="img/cover_img.jpg" alt="">
+        </div>
         <div class="cover_img_text">
             <h2>Ignite your life</h2>
             <p>YOUR JOURNEY TO UNLEASHING YOUR FULL POTENTIAL STARTS AT UNLEASH THE POWER WITHIN</p>
@@ -154,7 +163,7 @@
 
     <footer>
         <div class="footer_main footer_element">
-            <div class="company_info">
+            <div class="company_info footer_main_item">
                 <div class="company_name">
                     <h3>ROBBINS RESEARCH<br>INTERNATIONAL, INC.</h3>
                 </div>
@@ -163,20 +172,20 @@
                 </div>
                 <div class="social_media">
                     <div class="social_media_header">
-
+                        <h3>Connect with Tony</h3>
                     </div>
                     <div class="social_media_icon">
-                        <div class="media_fake_icon" id="facebook"></div>
-                        <div class="media_fake_icon" id="twitter"></div>
-                        <div class="media_fake_icon" id="linkedin"></div>
-                        <div class="media_fake_icon" id="youtube"></div>
-                        <div class="media_fake_icon" id="podcast"></div>
-                        <div class="media_fake_icon" id="insta"></div>
+                        <a href="#"><div class="media_fake_icon" id="facebook"></div></a>
+                        <a href="#"><div class="media_fake_icon" id="twitter"></div></a>
+                        <a href="#"><div class="media_fake_icon" id="linkedin"></div></a>
+                        <a href="#"><div class="media_fake_icon" id="youtube"></div></a>
+                        <a href="#"><div class="media_fake_icon" id="podcast"></div></a>
+                        <a href="#"><div class="media_fake_icon" id="insta"></div></a>
 
                     </div>
                 </div>
             </div>
-            <div class="quick_link">
+            <div class="quick_link footer_main_item">
 
                     <a href="#">Sitemap</a>
                     <a href="#">Careers</a>
@@ -189,10 +198,10 @@
                     <a href="#">Crew Program</a>
 
             </div>
-            <div class="contact">
+            <div class="contact footer_main_item">
                 <div class="media_inquiries">
                     <div class="inquiries_header">
-                        <h3>Media Inquiries</h3>
+                        <a href="#"><h3>Media Inquiries</h3></a>
                     </div>
                     <div class="inquiries_text">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem atque modi aspernatur nam sint ab ut laboriosam voluptate excepturi dicta.</p>
@@ -200,19 +209,13 @@
                 </div>
                 <div class="support">
                     <div class="support_header">
-                        <h3>Customer Support</h3>
+                        <a href="#"><h3>Customer Support</h3></a>
                     </div>
                     <div class="support_text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer_ext_link footer_element">
-            <h3>Also of interest</h3>
-            <a href="#">Smart Goals</a>
-            <a href="#">Nepotism</a>
-            <a href="#">Quotes For Success</a>
         </div>
     </footer>
     <div class="copyright_statement">

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment_form.css">
+    <title>Payment Form</title>
+</head>
+<body>
+    <div class="form_container">
+        <form name="payment_form" action="">
+            <div class="form_header">
+                <h2>Purchase Order Form</h2>
+            </div>
+            <div class="form_section product_info">
+                <h3>Product Information</h3>
+                <table>
+                    <tr>
+                        <th><label for="">Product:</label></th>
+                        <td>
+                            <select required id="product_name" onchange="changeProduct()">
+                                <option value="">Select</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="">Unit Price ($):</label></th>
+                        <td><input type="number" value="0" readonly id="product_price"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="">Quantity:</label></th>
+                        <td><input type="number" placeholder="0" required id="quantity" onkeyup="updateTotalPrice()"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="">Total Price ($):</label></th>
+                        <td><input type="number" placeholder="0" readonly id="total_price"></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="form_section ship_info">
+                <h3>Shipping Information</h3>
+                <table>
+                    <tr>
+                        <th><label for="">Full Name:</label></th>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="">Shipping Address:</label></th>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="">Credit Card:</label></th>
+                        <td>
+                            <select required id="cc_card">
+                                <option value="">Select</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="">Credit Card Number:</label></th>
+                        <td>
+                            <input type="tel" maxlength="4" pattern = '[0-9]{4}' class="cc_no" required>
+                            <input type="tel" maxlength="4" pattern = '[0-9]{4}' class="cc_no" required>
+                            <input type="tel" maxlength="4" pattern = '[0-9]{4}' class="cc_no" required>
+                            <input type="tel" maxlength="4" pattern = '[0-9]{4}' class="cc_no" required>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form_button">
+                <div class="button_container">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="js/payment_form.js"></script>
+</body>
+</html>

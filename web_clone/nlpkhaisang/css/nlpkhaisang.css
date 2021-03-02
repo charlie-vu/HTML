@@ -378,8 +378,7 @@ menu{
         margin: 5vh 3em;
 
     }
-    .about_txt{
-    }
+
         .about h3{
             text-transform: uppercase;
             font-size: 1.5em;
@@ -401,8 +400,7 @@ menu{
                 color: white;
             }
     
-    .about_vid{
-    }
+
         .vid_area{
             width: 400px;
             height: 400px;

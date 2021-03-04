@@ -179,8 +179,9 @@ header{
 
 }
 .featured_thumb{
-    width: 400px;
-    max-width: 30vw;
+    width: 20vw;
+    min-width: 300px;
+
     padding-bottom: 2em;
     margin-bottom: 5em;
 
@@ -201,7 +202,8 @@ header{
         overflow: hidden;
     }
         .thumb_img img{
-            width: 100%;
+            width: 110%;
+            object-fit: cover;
             object-position: center;
         }
     .thumb_deco{
@@ -281,6 +283,21 @@ header{
         border: 3px solid #F4D03F;
     }
 
+#featured_online .thumb_deco{
+    background-color: #2E8ECE;
+    color: #2E8ECE;
+}
+    #featured_online .thumb_deco_icon{
+        border: 3px solid #2E8ECE;
+    }
+
+#featured_chuyen_sau .thumb_deco{
+    background-color: #EC644B;
+    color: #EC644B;
+}
+    #featured_chuyen_sau .thumb_deco_icon{
+        border: 3px solid #EC644B;
+    }    
 
 
     

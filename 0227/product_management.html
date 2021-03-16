@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product_management.css">
+    <title>Product Manager</title>
+</head>
+<body>
+    <section class="product_add">
+        <div class="heading_panel">
+            <h2>Input product's detail information</h2>
+        </div>
+        <div class="body_panel">
+            <form action="#">
+                <div class="form_element">
+                    <label for="">Product Name</label>
+                    <input type="text" id="product_name" required>
+                </div>
+                <div class="form_element">
+                    <label for="">Manufacturer Name</label>
+                    <select name="" id="manufacturer_name" onchange="changeManufacturerName()">
+                        <option value="">-- Select --</option>
+                    </select>
+                </div>
+                <div class="form_element">
+                    <label for="">Category Name</label>
+                    <select name="" id="category_name">
+                        <option value="">-- Select --</option>
+                    </select>
+                </div>
+                <div class="form_element">
+                    <label for="">Price</label>
+                    <input type="number" id="price" required onkeyup="updateTotalPrice()">
+                </div>
+                <div class="form_element">
+                    <label for="">Quantity</label>
+                    <input type="number" id="quantity" required onkeyup="updateTotalPrice()">
+                </div>
+                <div class="form_element">
+                    <label for="">Total Price</label>
+                    <input type="number" id="total_price" disabled>
+                </div>
+
+                <div class="form_button">
+                    <button class="button_add" id="save_btn" type="button" onclick="addProduct()">Add Product</button>
+                    <button class="button_reset" type="reset">Reset</button>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="product_show">
+        <div class="heading_panel">
+            <h2>Management Products</h2>
+        </div>
+        <div class="body_panel">
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Product Name</th>
+                        <th>Company Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Manufacturer Name</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="result">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer></footer>
+
+
+    <script src="js/product_management.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* 
+color-gray-menu: ccd0bf
+bg-ltblue-fb: 00bffc
+bg-ltgray: f4f4f4
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+menu ul{
+    display: flex;
+}
+menu ul li a{
+    display: block;
+    padding: 0 1em;
+    border-right: 1px solid lightgray;
+}
+    menu ul li:last-child a{
+        border-right: none;
+    }
+
+
+
+header{
+    color: white;
+    display: flex;
+    padding: 2rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: transparent;
+}
+    .heading h1{
+        text-transform: uppercase;
+
+    }
+    menu{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+.side-header{
+    display: flex;
+}
+    .icon-area{
+        padding: 0 1em;
+        border-right: 1px solid lightgray;
+    }
+    .icon-area:last-child{
+        border-right: none;
+    }
+        .icon-header{
+            width: 30px;
+            height: 30px;
+            background-color: lightgray;
+        }
+
+.slideshow{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to top right,#bf957f,black);
+
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.slideshow-reserve-area{
+    height: 550px;
+    background-color: transparent;
+}
+
+.product{
+    margin-top: 5rem;
+}
+    .heading-product{
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        width: fit-content;
+        margin: auto;
+    }
+        /* .heading-product h1{
+            width: fit-content;
+        } */
+    .deco-line{
+        width: 3em;
+        height: 1px;
+        margin: auto;
+        border-bottom: 5px double lightgray;
+    }
+
+.thumb-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+    .thumb{
+        padding: 2rem;
+        width: 400px;
+        text-align: center;
+        position: relative;
+    }
+        .thumb-pic{
+            width: 200px;
+            height: 250px;
+            background-color: #233f7e;
+            margin: auto;
+        }
+        .thumb-tag{
+            color: gray;
+            font-size: 80%;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 1em;
+        }
+        .thumb-product-name h2{
+            font-size: 1.2em;
+            text-transform: capitalize;
+        }
+        .thumb-product-price{
+            font-weight: bold;
+        }
+            .thumb-product-price p::after{
+                content: " đ";
+            }
+        .thumb-discount{
+            padding: 8px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #e9b746;
+            border-radius: 50%;
+
+            color: white;
+            font-weight: bold;
+
+            position: absolute;
+            top: 2rem;
+        }

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+}
+footer{
+    height: 10rem;
+}
+button{
+    border: none;
+}
+button:focus{
+    outline: none;
+}
+
+input:focus{
+    background-color: #fafec0;
+}
+
+section{
+    width: 50vw;
+    border: 1px solid #377bb5;
+    border-radius: 3px;
+
+    margin: auto;
+    margin-top: 3rem;
+}
+.heading_panel{
+    background-color: #377bb5;
+    color: white;
+    text-transform: capitalize;
+    padding: 1em 2em;
+}
+.body_panel{
+    background-color: white;
+    padding: 2em;
+}
+    .body_panel .form_element{
+        margin-top: 1em;
+    }
+    .body_panel .form_element:first-child{
+        margin-top: 0;
+    }
+
+    .body_panel label{
+        display: block;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .body_panel input, .body_panel select{
+        display: block;
+        padding: 0.5em;
+    }
+        .body_panel input{
+            width: 98%;
+        }
+        .body_panel select{
+            width: 100%;
+        }
+.form_button{
+    margin-top: 2em;
+}
+    .form_button button{
+        padding: 1em;
+        font-weight: bold;
+        color: white;
+        text-transform: capitalize;
+        border-radius: 3px;
+    }
+        .button_add{
+            background-color: #5fb760;
+        }
+        .button_add:active{
+            background-color: #438545;
+        }
+        .button_reset{
+            background-color: #efac56;
+        }
+        .button_reset:active{
+            background-color: #c99148;
+        }
+
+table, th, td{
+    border: 1px solid lightgray;
+}
+th, td{
+    padding: 0.5em;
+}
+table{
+    width: 100%;
+}
+
+table button{
+    padding: 0.5em 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+}
+    table .edit_btn{
+        background-color: #efac56;
+    }
+    table .edit_btn:active{
+        background-color: #c99148;
+    }
+    table .delete_btn{
+        background-color: #d75452;
+    }
+    table .delete_btn:active{
+        background-color: #a8413f;
+    }

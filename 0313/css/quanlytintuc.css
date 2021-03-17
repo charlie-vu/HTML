@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+li{
+    list-style: none;
+}
+menu ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+menu ul li{
+    display: block;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+    .logo-area{
+        width: 200px;
+        height: 100px;
+        background-color: red;
+
+
+
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        line-height: 100px;
+    }
+    .heading{
+        text-transform: uppercase;
+        margin: auto;
+    }
+
+menu{
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+
+    padding: 0 2em;
+}
+menu ul{
+    background-color: #1274ec;
+
+    justify-content: center;
+}
+menu ul li a{
+    display: block;
+    padding: 1em 2em;
+    border-right: 1px solid white;
+}
+menu ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+section{
+    width: 70vw;
+    margin: 3em auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    article{
+        max-width: 70%;
+        padding: 1em;
+    }
+    aside{
+        max-width: 25%;
+        border: 3px solid black;
+        padding: 1em 2em;
+
+        height: fit-content;
+    }
+
+    .section-heading{
+        text-transform: uppercase;
+    }
+    .section-body{
+        margin-top: 1em;
+        font-weight: bold;
+    }
+    .aside-body a{
+        text-transform: uppercase;
+    }
+    .aside-body a:hover{
+        text-decoration: underline;
+    }
+
+#add-btn{
+    display: block;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: red;
+    color: white;
+
+    position: absolute;
+    bottom: 5vh;
+    right: 3vw;
+}
+#add-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.form-heading{
+    text-transform: uppercase;
+}
+.form-body{
+    margin-top: 2em;
+}
+    .form-body label{
+        font-weight: bold;
+        display: block;
+    }
+    .form-body input, .form-body textarea{
+        padding: 0.5em;
+    }
+    .form-body button{
+        padding: 1em 2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+    }
+    .button{
+        margin-top: 2em;
+    }
+        #save-btn{
+            background-color: #ff7f27;
+        }
+        #reset-btn{
+            background-color: red;
+        }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quanlytintuc.css">
+    <title>Thêm Bài viết</title>
+</head>
+<body>
+    <header>
+        <a href="quanlytintuc.html"><div class="logo-area">
+            <p>LOGO</p>
+        </div></a>
+        <div class="heading">
+            <a href="quanlytintuc.html"><h1>Web Tin Tức</h1></a>
+        </div>
+    </header>
+    <menu>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Tin học</a></li>
+            <li><a href="#">Biểu mẫu</a></li>
+            <li><a href="#">Khóa học</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Liên hệ</a></li>
+
+        </ul>
+    </menu>
+
+    <section>
+        <article>
+            <form action="" method="post" onsubmit="return checkValid()">
+                <div class="form-heading">
+                    <h3>Nhập thông tin bài viết</h3>
+                </div>
+                <div class="form-body">
+                    <div class="tieu-de">
+                        <label for="">Tiêu đề</label>
+                        <input type="text" required id="tieu-de">
+                    </div>
+                    <div class="hinh-anh">
+                        <label for="">Hình ảnh</label>
+                        <input type="text">
+                    </div>
+                    <div class="noi-dung">
+                        <label for="">Nội dung</label>
+                        <textarea name="" id="noi-dung" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit" id="save-btn">Lưu</button>
+                        <button type="reset" id="reset-btn">Xóa</button>
+                    </div>
+                </div>
+            </form>
+
+
+
+        </article>
+        <aside>
+            <div class="aside-heading section-heading">
+                <h3>Bài viết mới nhất</h3>
+            </div>
+            <div class="aside-body section-body">
+                <ul>
+                    <li><a href="#">Bài 1</a></li>
+                    <li><a href="#">Bài 2</a></li>
+                    <li><a href="#">Bài 3</a></li>
+                    <li><a href="#">Bài 4</a></li>
+                    <li><a href="#">Bài 5</a></li>
+
+                </ul>
+            </div>
+        </aside>
+        <a href="quanlytintuc.html" id="add-btn">Trở về Trang chủ</a>
+    </section>
+
+
+
+
+    <script src="js/quanlytintuc.js"></script>
+</body>
+</html>

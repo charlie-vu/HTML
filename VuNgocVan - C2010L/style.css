@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding-bottom: 32px 0; */
+    font-size: 14px;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+
+.body-warp{
+    width: 960px;
+    margin: auto;
+    background-image: url(data/background.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+header{
+    height: 120px;
+    text-align: center;
+    /* background-color: lightgray; */
+    text-transform: capitalize;
+}
+
+    header h1{
+        font-size: 300%;
+        color: white;
+    }
+    header h2{
+        font-size: 170%;
+        color: white;
+    }
+menu{
+    text-transform: capitalize;
+    color: white;
+
+    background-image: url(data/bar.jpg);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+    /* menu ul{
+        display: flex;
+    } */
+    menu ul li{
+        display: inline-block;
+    }
+    menu ul li a{
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    menu ul li a:hover{
+        text-decoration: underline;
+    }
+
+section{
+    display: flex;
+    padding: 16px;
+}
+article{
+    padding: 16px;
+    margin-right: 16px;
+}
+.ad img{
+    width: 100%;
+}
+.content article p{
+    margin-top: 32px;
+}
+
+    article{
+        width: 80%;
+    }
+    aside{
+        width: 20%;
+        display: inline-block;
+    }
+        .thumb-side{
+            background-color: gray;
+            padding: 16px;
+        }
+        .thumb-side p{
+            margin-top: 16px;
+            color: white;
+        }
+        .thumb-side a{
+            margin-top: 16px;
+            text-decoration: underline;
+            display: block;
+
+        }
+
+footer{
+    background-image: url(data/bar.jpg);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+    color: white;
+}
+
+
+
+
+
+.contact-warp{
+    width: 960px;
+    margin: 100px auto;
+}
+.contact-heading{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact-warp form{
+    margin-top: 32px;
+    width: 100%;
+    background-color: lightgray;
+    border: 1px solid black;
+
+    padding: 16px;
+
+    color: white;
+    font-weight: bold;
+
+
+}
+form input{
+    padding: 0.5em;
+}
+form button{
+    padding: 8px 16px;
+}
+
+    .contact-warp form .input-row{
+        margin-top: 32px;
+    }
+    .contact-warp form .input-row:first-child{
+        margin-top: 0;
+    }
+    .contact-warp form label{
+        text-transform: uppercase;
+
+        display: inline-block;
+        width: 20%;
+    }
+    .contact-warp form input, .contact-warp form textarea{
+        width: 50%;
+    }
+        
+        #gender input{
+            width: fit-content;
+        }
+        .contact-warp form textarea{
+            padding: 0.5em;
+        }
+    .contact-warp form select{
+        width: fit-content;
+        padding: 0.5em;
+        padding-right: 32px;
+    }
+
+.form-button{
+    width: 100%;
+    text-align: center;
+    margin-top: 32px;
+}
